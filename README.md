@@ -133,6 +133,11 @@ AttributeError:'dict' object has no attribute 'env_specs'
 cd examples/TactileInsertionExp
 python train_tactile_insertion_ppo.py
 ````
+可视化训练内容
+````
+cd examples/TactileInsertionExp
+python train_tactile_insertion_ppo.py --cfg #训练好的模型的cfg.yaml 文件路径 --play
+````
 
 <p align="center">
     <img src="demos/tactile_insertion_sim.gif" alt="tactile_insertion" width="500" /></p>
