@@ -123,6 +123,12 @@ python train_tactile_push_ppo.py --cfg ./cfg/ppo_tactile.yaml --logdir ./trained
 
 We provide the simulation code for our sim-to-real tactile insertion experiment, run it with:
 
+显示
+````
+AttributeError:'dict' object has no attribute 'env_specs'
+````
+解决 将gym 版本从0.26.2 降到0.25.2
+
 ````
 cd examples/TactileInsertionExp
 python train_tactile_insertion_ppo.py
